@@ -1,0 +1,5 @@
+{
+  "name": "ARK-939 Navigation Override",
+  "description": "A high-fidelity sci-fi interface featuring fingerprint authorization and a terminal sequence for the ARK-939 deep space vessel.",
+  "requestFramePermissions": []
+}
