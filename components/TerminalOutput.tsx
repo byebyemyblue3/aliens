@@ -25,7 +25,7 @@ TEMPORAL COMMITMENT:
   OVERRIDE_REVERSAL: IMPOSSIBLE
   PARADOX_BUFFER:    ACTIVE (163493y)
 
-  VALIDATION:   KEY #1123
+  VALIDATION:   KEY #1423
 
 ===========================================
 > OVERRIDE COMPLETE. BON VOYAGE.`;
@@ -108,7 +108,7 @@ const TerminalOutput: React.FC = () => {
   }, []);
 
   const processLine = (line: string) => {
-    const dataRegex = /(SOL-3|163493y|0\.3c|5\.2%|#1123|v9\.4\.1-OMEGA)/g;
+    const dataRegex = /(SOL-3|163493y|0\.3c|5\.2%|#1423|v9\.4\.1-OMEGA)/g;
     const parts = line.split(dataRegex);
     
     return parts.map((part, i) => {
@@ -140,7 +140,7 @@ const TerminalOutput: React.FC = () => {
               <span className="text-[10px] opacity-40">IDENT:</span>
               <span>{line.includes('KEY') ? (
                   <>
-                    VALIDATION <span className="mx-2 opacity-30">|</span> KEY <ScrambledData value="#1123" />
+                    VALIDATION <span className="mx-2 opacity-30">|</span> KEY <ScrambledData value="#1423" />
                   </>
                 ) : (
                   line
